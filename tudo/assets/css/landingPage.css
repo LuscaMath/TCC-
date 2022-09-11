@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap');
+
+/*Configuraçôes gerais da pagina*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    background: url(../imagens/barber-shop-g4cb39862b_1920.jpg);
+    background-position:center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#content-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    flex: 1 0 auto;
+}
+
+.init-hidden {
+    opacity: 0;
+    transition: 1.5s ease-in-out;
+}
+
+.init-hidden-off {
+    opacity:1;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile .fa-bars {
+    font-size: 1.9rem;
+    cursor: pointer;
+    color: #000;
+}
+
+.menuMobile-items {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid #000;
+    display: block;
+    opacity: 0;
+    transition: 1s;
+}
+
+.menuMobile-items.show {
+    opacity: 1;
+}
+
+.menuMobile-items.hidde {
+    opacity: 0;
+}
+
+.menuMobile-items a {
+    display: block;
+    text-decoration: none;
+    color: #000000;    
+}
+
+/*Configuraçôes do cabeçalho da pagina*/
+
+#header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 0.8rem 4rem;
+}
+
+.logo-img {
+    width: 7rem;
+}
+
+.navigation {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.navigation a {
+    font-size: 0.95rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.navigation a:hover {
+    color: grey;
+}
+
+.navigation .navigation-button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.navigation .navigation-button:hover {
+    color: #ffffff;
+}
+
+/*Configuraçôes do conteudo principal da pagina*/
+
+.main-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 4% 2% 3% 1%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;   
+}
+
+.imagemContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    align-self: center;
+    width: 80%;
+    height: 300px;
+}
+
+.teste h2 {
+    display: flex;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+/*Configuraçôes do conteudo de serviços da pagina*/
+
+.services {
+    width: 100%;
+    display: flex;
+    padding: 4rem 2rem 8rem 2rem;
+    gap: 2rem;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.servicesDescription {
+    text-align: center;
+}
+
+.servicesDescription h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #808080;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.servicesDescription h1 {
+    color:#42434b;;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: 11px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: space-around;
+    height: 350px;
+}
+
+.card-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+    margin-right: 1.5%;
+    background-color: #ffffff;
+}
+
+.card-img1 {
+    background-image: url(../imagens/image-card1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-img2 {
+    background-image: url(../imagens/image-card2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-img3 {
+    background-image: url(../imagens/image-card3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-img4 {
+    background-image: url(../imagens/card-image4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mr-card {
+    margin-right: 0;
+}
+
+.card-button {
+    text-decoration: none;
+    color: #111111;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 0.875rem;
+    padding: 15px 30px;
+    margin: 0 auto;
+}
+
+.card-button:hover {
+    background-color: #a0c6b9;
+    color: #ffffff;
+}
+
+/*Seção sobre da página*/
+
+.textContent {
+    background-color: #f2f2f2;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 15rem 4rem 15rem;
+}
+
+.textContent h1 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.1;
+    font-size: 3.75rem;
+    color: #42434b;
+}
+
+.textContent p {
+    color: #42434b;
+    font-size: 1.72rem;
+    line-height: 1.7;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.textBar {
+    background-color: #000000;
+    width: 67px;
+    height: 5px;    
+}
+
+/*Seçao info*/
+
+.infoContent {
+    background-color:#000000;
+    padding: 6rem 0 4rem 0;
+}
+
+.infoContentTitles {
+    text-align: center;
+}
+
+.infoContentTitles h4 {
+    color: #ffffff;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.infoContentTitles h2 {
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2.25rem;
+    margin-bottom: 4rem;
+}
+
+.infoContentMain {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.infoContentMainImg {
+    background-image: url(../imagens/contact-image.jpg);
+    background-color: #f2f2f2;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 599px;
+}
+
+.infoContentMainText {
+    background-color: #ffffff;
+    width: 50%;
+    height: 599px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4rem;
+    gap: 2rem;
+}
+
+.infoContentMainText h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2.25rem;
+    color: #42434b;
+}
+
+.infoContentMainText p {
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 1.125rem;
+    color: #42434b;
+}
+
+.infoContentMainText a {
+    color: grey;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.infoContentMainText a:hover {
+    color: lightgray;
+}
+
+/*Seção contato da página*/
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    justify-content: space-around;
+    padding: 6rem 0;
+    width: 100%;
+}
+
+.contacts-item {
+    display: flex;
+    width: 32%;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.contacts-item h4 {
+    line-height: 1.2;
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    color: #42434b;
+}
+
+.fa-location-dot, .fa-mobile-screen-button, .fa-envelope {
+    align-self: center;
+    font-size: 2rem;
+}
+
+/*Footer da página*/
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    padding: 5rem 0 0 0;
+}
+
+.footer-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footer-text-items {
+    width: 25%;
+}
+
+.footer-text-items h4 {
+    line-height: 1.2;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.footer-text-items p {
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 0.875rem;
+    color: #ffffff;
+}
+
+.footer-icons {
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+}
+
+.footer-cr {
+    width: 100%;
+    padding: 2.5rem;
+    background-color: #333333;
+}
+
+.footer-cr p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+.footer-cr a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.footer-cr a:hover {
+    color: #808080;
+}
+
+.icon-collor {
+    color: #ffffff;
+    margin-right: 1rem;
+}
+
+
+/*Media query*/
+
+@media (max-width: 1181px) {
+    .main-content-text {
+        width: 60%;
+        padding: 2rem;
+        margin: 2rem auto;
+        text-align: left;
+    }
+
+    .main-content-text h2 {
+        font-size: 3rem;
+    }
+
+    .main-content-text p {
+        text-align: left;
+        margin-top: 3rem;
+    }
+
+    .main-content-img {
+        width: 40%;
+    }
+
+    .main-content-img img {
+        height: 450px;
+        margin-bottom: -0.75rem;
+    }
+
+    .services-cards {
+        height: fit-content;
+        justify-content: center;
+    }
+
+    .card-services {
+        width: 35%;
+        height: 250px;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .sobre {
+        gap: 4rem;
+    }
+
+    .sobre-title {
+        width: 100%;
+        text-align: left;
+    }
+
+    .sobre-paragraphs {
+        width: 100%;
+        gap: 2rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 991.98px) {
+    
+    #header {
+        justify-content: space-around;
+        padding: 2rem 0;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+    
+    .textContent {
+        padding: 3rem 3rem;
+    }
+
+    .main-content-text {
+        width: 100%;
+    }
+
+    .infoContentMainImg {
+        width: 100%;
+    }
+
+    .infoContentMainText {
+        width: 100%;
+    }
+}
+
+@media (max-width: 675px) {
+    .card-services {
+        width: 40%;
+        margin-bottom: 2rem;
+    }
+
+    .card-button {
+        font-size: 0.6rem;
+    }
+}
+
+
+@media (max-width: 596px) {
+    
+    #header {
+        padding: 0 2rem;
+    }
+
+    .title-items {
+        font-size: 1.2rem;
+    }
+
+    .sobre {
+        padding: 4rem;
+        gap: 2.5rem;
+    }
+
+    .sobre-title {
+        font-size: 1.5rem;
+    }
+
+    .sobre-paragraphs {
+        font-size: 0.8rem;
+        gap: 1.5rem;
+    }
+
+    .services {
+        padding: 4rem 0 2rem 0;
+        height: auto;
+    }
+
+    .card-services {
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+
+    .card-button {
+        font-size: 0.65rem;
+    }
+
+    .contacts-item {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .footer-text-items {
+        width: 100%;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 471px) {
+    .main-content-text .main-button {
+        padding: 14px 15px;
+        font-size: 0.8rem;
+    }
+
+    .card-services {
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .textContent {
+        padding: 2rem 2rem;
+    }
+
+    .textContent h1 {
+        font-size: 2rem;
+    }
+
+    .textContent p {
+        font-size: 1.2rem;
+    }
+    
+    .sobre-button {
+        padding: 13px 40px;
+    }
+
+    .infoContentMain {
+        width: 100%;
+        padding: 1rem;
+    }
+
+
+}
+
+@media (max-width: 391px) {
+    .title-items {
+        font-size: 0.85rem;
+    }
+
+    .infoContentMainImg {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .infoContentMainText h2 {
+        font-size: 1.5rem;
+    }
+    .infoContentMainText p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
